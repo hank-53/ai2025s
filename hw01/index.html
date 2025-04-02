@@ -216,10 +216,10 @@
     $('input').change(f).trigger('change');
   });
 
-  d3.select("#myCheckbox1").on("change",update);
-  d3.select("#myCheckbox2").on("change",update);
-  d3.select("#myCheckbox3").on("change",update);
-  d3.select("#myCheckbox4").on("change",update);
+  d3.select("#myCheckbox1").on("checked",update);
+  d3.select("#myCheckbox2").on("checked",update);
+  d3.select("#myCheckbox3").on("checked",update);
+  d3.select("#myCheckbox4").on("checked",update);
   // d3.select("#myCheckbox5").on("change",update);
   // d3.select("#myCheckbox6").on("change",update);
   // d3.select("#myCheckbox7").on("change",update);
