@@ -170,17 +170,17 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
           <td>Simple baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
           <td>Medium baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
           <td>Strong baseline - 描述</td>
         </tr>
@@ -216,10 +216,10 @@
     $('input').change(f).trigger('change');
   });
 
-  d3.select("#myCheckbox1").on("checked",update);
-  d3.select("#myCheckbox2").on("checked",update);
-  d3.select("#myCheckbox3").on("checked",update);
-  d3.select("#myCheckbox4").on("checked",update);
+  d3.select("#myCheckbox1").on("change",update);
+  d3.select("#myCheckbox2").on("change",update);
+  d3.select("#myCheckbox3").on("change",update);
+  d3.select("#myCheckbox4").on("change",update);
   // d3.select("#myCheckbox5").on("change",update);
   // d3.select("#myCheckbox6").on("change",update);
   // d3.select("#myCheckbox7").on("change",update);
